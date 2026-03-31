@@ -1,58 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>My Favorite Movies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Movies</title>
+    <style>
+        body {
+            background: linear-gradient(180deg, #0f0f14 0%, #1c1f2b 100%);
+            color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        p.subtitle {
+            color: #d0d4e4;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding: 0;
+            margin: 0 0 24px 0;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .links {
+            margin-bottom: 28px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 0 8px;
+            padding: 10px 18px;
+            border-radius: 999px;
+            text-decoration: none;
+            color: white;
+            background-color: #3a4a6a;
+            border: 1px solid #7585a6;
+        }
+
+        table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 14px;
+            color: #ffffff;
+        }
+
+        th, td {
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 14px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgba(59, 72, 101, 0.95);
+            color: #ffffff;
+            font-size: 17px;
+        }
+
+        td {
+            font-size: 16px;
+            color: #f0f2f8;
+        }
+
+        tr:hover td {
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        img {
+            width: 120px;
+            height: 180px;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>My Favorite Movies</h1>
+        <p class="subtitle">Three films I truly enjoy and often revisit.</p>
 
-<h1>My Favorite Movies</h1>
+        <ul>
+            <li>Interstellar</li>
+            <li>Inception</li>
+            <li>The Dark Knight</li>
+        </ul>
 
-<ul>
-<li>Interstellar</li>
-<li>Inception</li>
-<li>The Dark Knight</li>
-</ul>
+        <div class="links">
+            <a href="https://www.imdb.com" target="_blank">IMDb</a>
+            <a href="https://www.netflix.com" target="_blank">Netflix</a>
+        </div>
 
-<a href="https://www.imdb.com">IMDB</a><br>
-<a href="https://www.netflix.com">Netflix</a>
-
-<table border="1">
-<caption>Favorite Movies</caption>
-
-<tr>
-<th rowspan="2">Rank</th>
-<th colspan="2">Movie Info</th>
-<th rowspan="2">Tagline</th>
-</tr>
-
-<tr>
-<th>Title</th>
-<th>Poster</th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>Interstellar</td>
-<td><img src="image1.jpg" width="100" height="150" alt="Interstellar"></td>
-<td>Love is the one thing that transcends time and space.</td>
-</tr>
-
-<tr>
-<td>2</td>
-<td>Inception</td>
-<td><img src="image2.jpg" width="100" height="150" alt="Inception"></td>
-<td>You mustn't be afraid to dream a little bigger, darling.</td>
-</tr>
-
-<tr>
-<td>3</td>
-<td>The Dark Knight</td>
-<td><img src="image3.jpg" width="100" height="150" alt="Dark Knight"></td>
-<td>Why so serious?</td>
-</tr>
-
-</table>
-
+        <table>
+            <caption>Favorite Movies Table</caption>
+            <tr>
+                <th rowspan="2">Rank</th>
+                <th colspan="2">Movie Information</th>
+                <th rowspan="2">Tagline</th>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Poster</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Interstellar</td>
+                <td><img src="image1.jpg?v=2" alt="Interstellar poster" width="120" height="180"></td>
+                <td>Love is the one thing that transcends time and space.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Inception</td>
+                <td><img src="image2.jpg?v=2" alt="Inception poster" width="120" height="180"></td>
+                <td>You mustn't be afraid to dream a little bigger, darling.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>The Dark Knight</td>
+                <td><img src="image3.jpg?v=2" alt="The Dark Knight poster" width="120" height="180"></td>
+                <td>Why so serious?</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
